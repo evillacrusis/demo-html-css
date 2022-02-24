@@ -1,3 +1,4 @@
+/* Global */
 body {
     margin: 0;
     font-family: 'Heebo', sans-serif; 
@@ -10,6 +11,56 @@ a {
 
 a:hover{
     text-decoration: underline;
+}
+
+.flex, .row {
+    display: flex;
+}
+
+.row{
+    margin-left: -10px;
+    margin-right: -10px
+}
+
+.col {
+    flex: 1;
+    padding: 10px;
+}
+
+.box {
+    background-color: #fff;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card{
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.card-body{
+    padding: 23px;
+}
+
+.card-title{
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    font-weight: 400;
+}
+
+.card-details {
+    margin-bottom: 15px;
+}
+.card-details span{
+    margin-right: 15px;
 }
 
 /* Header */
@@ -70,4 +121,24 @@ nav > a {
     width: 243px;
     box-shadow: -5px 11px 0px #edf7fa;
     border-radius: 50%;
+}
+
+/* Posts */
+.posts {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #EDF7FA;
+}
+.posts-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.posts-header a{
+    color: #00A8CC;
+    font-size: 16px;
+}
+.posts h2 {
+    margin: 0;
+    font-weight: 400;
 }
