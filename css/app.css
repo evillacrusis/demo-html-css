@@ -142,3 +142,40 @@ nav > a {
     margin: 0;
     font-weight: 400;
 }
+
+/* Works */
+
+.work{
+    margin-top: 40px;
+}
+.work-body{
+    display: flex;
+    margin-bottom: 15px;
+}
+.work-details{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.work-details  p {
+    font-weight: 400;
+}
+.work-title{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.work-type{
+    font-family: Heebo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    margin-left: 20px;
+    color: #8695A4;
+}
+
+.work-image img{
+    width: 246px;
+    height: auto;
+}
