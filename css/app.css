@@ -179,3 +179,12 @@ nav > a {
     width: 246px;
     height: auto;
 }
+
+.badge{
+    background-color: #142850;
+    color: #fff;
+    padding: 0px 10px;
+    border-radius: 16px;
+    font-weight: 900;
+    font-size: 1.2rem;
+}
