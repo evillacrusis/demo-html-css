@@ -1,6 +1,7 @@
 <!doctype html>
 <head>
     <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/app.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,16 +11,21 @@
 </head>
 <body>
     <header>
-        <nav>
-            <a href="/">
-                Works 
-            </a>
-            <a href="#">
-                Blog 
-            </a>
-            <a href="#">
-                Contacts 
-            </a>
+        <nav id="hamnav">
+            <label for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger"/>
+
+            <div id="hamitems">
+                <a href="/">
+                    Works 
+                </a>
+                <a href="#">
+                    Blog 
+                </a>
+                <a href="#">
+                    Contacts 
+                </a>
+            </div>
         </nav>
     </header>
     <main>

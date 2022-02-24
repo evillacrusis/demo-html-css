@@ -4,6 +4,18 @@ body {
     font-family: 'Heebo', sans-serif; 
 } 
 
+
+p{
+    font-weight: 400;
+    line-height: 23px;
+}
+
+h2{
+    font-weight: 400;
+    font-size: 22px;
+}
+
+
 a {
     text-decoration: none;
     color: #000;
@@ -69,7 +81,7 @@ header{
     padding: 1em 4em;
 }
 
-nav{
+/* nav{
     display: flex;
     justify-content: flex-end;
 }
@@ -78,7 +90,20 @@ nav > a {
     padding-left: 33px;
     font-size: 20px;
     font-weight: 500;
+} */
+
+#hamitems { 
+    display: flex; 
+    justify-content: flex-end;
 }
+
+#hamitems a {
+    padding-left: 33px;
+    font-size: 20px;
+    font-weight: 500;
+}
+  
+#hamnav label, #hamburger { display: none; }
 
 /* Profile */
 
@@ -206,4 +231,83 @@ footer{
 
 .copyright{
     font-size: 14px;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 800px) {
+    
+    .profile-body {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 20px;
+    }
+    .profile-info{
+        text-align: center;
+        width: 100%;
+    }
+
+    .profile-info > h1{
+        text-align: center;
+    }
+
+    .work-body{
+        flex-direction: column;
+    }
+
+    .work-details{
+        margin-left: 0;
+    }
+    
+    .work-image img{
+        width: 100%;
+        height: auto;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+
+    .container{
+        padding: 15px;
+    }
+
+    /* (A) BREAK INTO VERTICAL MENU */
+    #hamitems a {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      padding: 0;
+      margin-top:15px;
+    }
+   
+    /* (B) SHOW HAMBURGER ICON */
+    #hamnav label { 
+      display: flex; 
+      justify-content: flex-end;
+      margin-right: 10px;
+      font-style: normal;
+      font-size: 2em;
+    }
+  
+    /* (C) TOGGLE SHOW/HIDE MENU */
+    #hamitems { display: none; }
+    #hamburger:checked ~ #hamitems { display: block;  }
+
+
+    /* (D) MENU POSITION */
+    header{
+        padding: 0;
+    }
+
+    #hamnav{
+        position: absolute;
+        width: 100%;
+        background: #fff;
+    }
+    .profile {
+        padding-top: 35px;
+    }
 }
